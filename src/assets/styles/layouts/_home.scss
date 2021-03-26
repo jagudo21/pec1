@@ -13,9 +13,9 @@ p {
 }
 
 ul {
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 a {
@@ -40,12 +40,12 @@ a {
 
 .header {
   display: flex;
-  background: linear-gradient(180deg, $color-secondary 98%, $color-contrast 100%);
-  background-color: $color-secondary;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  color: $color-text;
+  background: linear-gradient(180deg, $color-secondary 98%, $color-contrast 100%);
+  background-color: $color-secondary;
   border-bottom: solid 5px $color-contrast;
-  color: $color-text; 
 }
 
 .header__icon {
@@ -68,11 +68,11 @@ a {
 }
 
 .header__main { 
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   
   h1 { 
@@ -82,9 +82,9 @@ a {
   }
   
   p { 
-    font-size: 1.3rem;
     padding: 5px;
     margin-bottom: 10px;
+    font-size: 1.3rem;
   }
 }
 
@@ -101,8 +101,8 @@ a {
   ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
   }
 
 }
@@ -123,9 +123,9 @@ a {
   display: flex;
   flex-direction: column-reverse;
   padding-top: 10px;
+  padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: $breakpoint-tablet) {
     flex-direction: row;
@@ -143,10 +143,10 @@ a {
 
 .main__info {
   @media (min-width: $breakpoint-desktop) {
-    flex-grow: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
   }
 }
 
@@ -163,32 +163,32 @@ a {
 }
 
 .card__title {
-  font-weight: bold;
-  font-size: 1.3rem;
-  text-align: center;
   margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  border-top: solid 20px $color-secondary;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
+  border-top: solid 20px $color-secondary;
 
   @media (min-width: $breakpoint-tablet) {
-    text-align: left;
-    padding-left: 20px;
     padding-right: 20px;
-    border-top: 0;
-    border-right: solid 2px $color-secondary;
-    border-right-width: 2px;
-    border-right-style: solid;
-    border-image: linear-gradient(to bottom, $color-white, $color-contrast) 1 100%;
+    padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: left;
+    border-top: 0;
+    border-right: solid 2px $color-secondary;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-image: linear-gradient(to bottom, $color-white, $color-contrast) 1 100%;
   }
 }
 
@@ -215,10 +215,10 @@ a {
 \*------------------------------------*/
 
 .footer {
-  height: 80px;
-  background-color: $color-secondary;
-  color: $color-text;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 80px;
+  color: $color-text;
+  background-color: $color-secondary;
 }

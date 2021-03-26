@@ -1,8 +1,8 @@
 /* Elemento para mostrar una barra de estado similar a un porcentaje de cargado */
 .graphic {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   
   @media (min-width: $breakpoint-tablet) {
     justify-content: flex-start;
@@ -14,9 +14,9 @@
 .graphic__container {
   width: 60px;
   height: 15px;
+  overflow: hidden;
   background-color: $color-grey;
   border-radius: 10px;
-  overflow: hidden;
 
   div {
     height: 100%;

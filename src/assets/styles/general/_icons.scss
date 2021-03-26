@@ -1,14 +1,14 @@
 /* Iconos propios que no se encuentran en FontAwesome */
 %i {
-  background-size: 25px 25px;
-  background-repeat: no-repeat;
+  position: relative;
+  top: 5px;
   display: inline-block;
   width: 25px;
   height: 25px;
-  content: "";
   margin-right: 10px;
-  position: relative;
-  top: 5px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
 }
   
 .facebook ::before {
@@ -38,9 +38,9 @@
 
 /* FontAwesome edición */
 %icon {
+  margin-right: 15px;
   font-size: 16px;
   color: $color-contrast;
-  margin-right: 15px;
 }
 
 .icon { @extend %icon; }

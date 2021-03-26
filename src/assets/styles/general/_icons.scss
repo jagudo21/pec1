@@ -11,25 +11,25 @@
   background-size: 25px 25px;
 }
   
-.facebook ::before {
+.facebook {
   background-image: url("~/src/assets/images/i-facebook.png");
-
+ 
   @extend %i;
 }
 
-.twitter ::before {
+.twitter {
   background-image: url("~/src/assets/images/i-twitter.png");
 
   @extend %i;
 }
 
-.instagram ::before {
+.instagram {
   background-image: url("~/src/assets/images/i-instagram.png");
 
   @extend %i;
 }
 
-.linkdn ::before {
+.linkdn {
   background-image: url("~/src/assets/images/i-linkdn.png");
   
   @extend %i;
@@ -37,10 +37,10 @@
 
 
 /* FontAwesome edición */
-%icon {
+%i {
   margin-right: 15px;
   font-size: 16px;
   color: $color-contrast;
 }
 
-.icon { @extend %icon; }
+.icon { @extend %i; }

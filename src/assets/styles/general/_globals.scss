@@ -1,4 +1,39 @@
-/* Clases generales  */
+/* Clases y estilos generales */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-page;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-contrast;
+    text-decoration: underline;
+  }
+
+  &:focus { text-decoration: underline; }
+}
+
+
+
 
 
 /* Ocultar el elemento cuando supera el ancho de pantalla determinado */

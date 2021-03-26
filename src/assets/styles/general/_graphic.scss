@@ -1,0 +1,33 @@
+/* Elemento para mostrar una barra de estado similar a un porcentaje de cargado */
+.graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media (min-width: $breakpoint-tablet) {
+    justify-content: flex-start;
+  }
+}
+
+.graphic__label { margin-right: 20px; }  
+
+.graphic__container {
+  width: 60px;
+  height: 15px;
+  background-color: $color-grey;
+  border-radius: 10px;
+  overflow: hidden;
+
+  div {
+    height: 100%;
+    background-color: $color-contrast;
+
+    &.graphic-6 { width: graphic-width(6); }
+
+    &.graphic-7 { width: graphic-width(7); }
+
+    &.graphic-8 { width: graphic-width(8); }
+
+    &.graphic-9 { width: graphic-width(9); }
+  }
+}

@@ -1,0 +1,4 @@
+/* Función que devuelve el porcentaje de ancho que ocupa un elemento respecto al padre según el valor del parámetro */
+@function graphic-width($base) {
+  @return ($base * 10%);
+}

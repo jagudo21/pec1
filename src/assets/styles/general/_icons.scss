@@ -1,0 +1,46 @@
+/* Iconos propios que no se encuentran en FontAwesome */
+%i {
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  content: "";
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+  
+.facebook ::before {
+  background-image: url("~/src/assets/images/i-facebook.png");
+
+  @extend %i;
+}
+
+.twitter ::before {
+  background-image: url("~/src/assets/images/i-twitter.png");
+
+  @extend %i;
+}
+
+.instagram ::before {
+  background-image: url("~/src/assets/images/i-instagram.png");
+
+  @extend %i;
+}
+
+.linkdn ::before {
+  background-image: url("~/src/assets/images/i-linkdn.png");
+  
+  @extend %i;
+}
+
+
+/* FontAwesome edición */
+%icon {
+  font-size: 16px;
+  color: $color-contrast;
+  margin-right: 15px;
+}
+
+.icon { @extend %icon; }

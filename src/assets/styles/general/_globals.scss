@@ -1,0 +1,9 @@
+/* Clases generales  */
+
+
+/* Ocultar el elemento cuando supera el ancho de pantalla determinado */
+.show-tablet {
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}

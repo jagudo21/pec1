@@ -1,21 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  font-family: $font-page;
+  font-size: 1rem;
 }
 
-.uoc-logo {
-  display: block;
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-contrast;
+    text-decoration: underline;
+  }
+
+  &:focus { text-decoration: underline; }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-HEADER
+\*------------------------------------*/
+
+.header {
+  display: flex;
+  background: linear-gradient(180deg, $color-secondary 98%, $color-contrast 100%);
+  background-color: $color-secondary;
+  padding-bottom: 10px;
   margin-bottom: 20px;
-  width: 300px;
-  height: auto;
+  border-bottom: solid 5px $color-contrast;
+  color: $color-text; 
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+.header__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0px;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 150px;
+      height: 225px;
+    }
+  }
+}
+
+.header__main { 
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  h1 { 
+    text-transform: uppercase;
+    
+    span { color: #ff9933; }
+  }
+  
+  p { 
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.header__detail { display: flex; }
+
+.header__contact {
+  display: none;
+  padding-right: 30px;
+  
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-MAIN
+\*------------------------------------*/
+
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }  
+}
+
+.main__detail {
+  min-width: 200px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 420px;
+    margin-right: 20px;
+  }
+}
+
+.main__info {
+  @media (min-width: $breakpoint-desktop) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+.card {
+  margin-bottom: 40px;
+}
+
+.card-info {
+  @media (min-width: $breakpoint-desktop) {
+    width: 45%;
+    margin-right: 10px;
+  }
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: solid 20px $color-secondary;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 0;
+    border-right: solid 2px $color-secondary;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-image: linear-gradient(to bottom, $color-white, $color-contrast) 1 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.list__line {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  a {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-contrast;
+      transition: .2s;
+    }
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-FOOTER
+\*------------------------------------*/
+
+.footer {
+  height: 80px;
+  background-color: $color-secondary;
+  color: $color-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
